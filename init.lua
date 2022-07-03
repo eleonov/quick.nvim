@@ -2,6 +2,8 @@ require('basics')
 require('colors')
 require('telescope-config')
 require('coc-config')
+require('lualine-config')
+require('tree-config')
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
@@ -26,6 +28,18 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'github/copilot.vim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }

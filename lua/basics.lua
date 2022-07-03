@@ -14,13 +14,14 @@ vim.o.splitright = true
 vim.o.scrolloff = 3
 vim.o.errorbells = false
 vim.o.shiftwidth = 2
-vim.o.numberwidth = 4
+vim.o.numberwidth = 2
 vim.o.termguicolors = true
-vim.o.colorcolumn = '80'
+vim.o.colorcolumn = '80,120'
 vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
+vim.o.clipboard = 'unnamedplus' 
 
 vim.api.nvim_set_keymap('n', 'vs', ':vs<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'sp', ':sp<CR>', { noremap = true })
