@@ -12,3 +12,16 @@ vim.o.hidden = true
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.updatetime = 300
+vim.g.coc_global_extensions = {
+  "coc-eslint",
+  "coc-json",
+  "coc-pairs",
+  "coc-prettier",
+  "coc-tailwindcss",
+  "coc-tsserver",
+  "coc-emmet",
+  "coc-yaml",
+  "coc-tsserver",
+  "coc-markdownlint",
+  "coc-go",
+}

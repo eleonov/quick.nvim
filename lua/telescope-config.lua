@@ -9,14 +9,13 @@ telescope.setup{
   },
   pickers = {
     find_files = {
-      theme = "dropdown",
       previewer = false,
+      theme = "dropdown"
     }
  },
   extensions = {
     file_browser = {
-      theme = "dropdown",
-      previewer = false,
+      theme = "ivy"
     }
   }
 }
