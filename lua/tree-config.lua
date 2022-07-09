@@ -22,4 +22,4 @@ require("nvim-tree").setup({
   }
 })
 
-vim.api.nvim_set_keymap('n', '<C-T>', ":NvimTreeFocus<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-T>', ":NvimTreeToggle<CR>", { noremap = true, silent = true })

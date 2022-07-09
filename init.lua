@@ -4,6 +4,7 @@ require('telescope-config')
 require('coc-config')
 require('lualine-config')
 require('tree-config')
+require('bufferline-config')
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
@@ -51,4 +52,5 @@ return require('packer').startup(function()
       require"surround".setup {mappings_style = "surround"}
     end
   }
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 end)

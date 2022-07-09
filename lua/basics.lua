@@ -22,6 +22,7 @@ vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
 vim.o.clipboard = 'unnamedplus' 
+vim.opt.termguicolors = true
 
 vim.api.nvim_set_keymap('n', 'vs', ':vs<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'sp', ':sp<CR>', { noremap = true })
@@ -32,6 +33,7 @@ vim.api.nvim_set_keymap('n', '<C-J>', '<C-W><C-J>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'tn', ':tabnew<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'tk', ':tabnext<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'tj', ':tabprev<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'tx', ':tabclose<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
